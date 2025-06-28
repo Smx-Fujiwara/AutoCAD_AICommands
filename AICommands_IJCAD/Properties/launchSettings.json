@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "IJCAD": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\ITJP\\IJCAD 2025 PRO Subscription\\gcad.exe"
+    }
+  }
+}

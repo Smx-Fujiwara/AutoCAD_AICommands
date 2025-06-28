@@ -1,0 +1,105 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AICommands_IJCAD/1.0.0": {
+        "dependencies": {
+          "System.Speech": "9.0.3",
+          "GcCoreMgd": "1.0.9055.29274",
+          "GcDbMgd": "3.5.0.29263",
+          "GcMgd": "1.0.9055.29284",
+          "GrxCAD.Interop": "24.0.12.16"
+        },
+        "runtime": {
+          "AICommands_IJCAD.dll": {}
+        }
+      },
+      "System.Speech/9.0.3": {
+        "runtime": {
+          "lib/net8.0/System.Speech.dll": {
+            "assemblyVersion": "9.0.0.3",
+            "fileVersion": "9.0.325.11113"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Speech.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.3",
+            "fileVersion": "9.0.325.11113"
+          }
+        }
+      },
+      "GcCoreMgd/1.0.9055.29274": {
+        "runtime": {
+          "GcCoreMgd.dll": {
+            "assemblyVersion": "1.0.9055.29274",
+            "fileVersion": "25.0.10.16"
+          }
+        }
+      },
+      "GcDbMgd/3.5.0.29263": {
+        "runtime": {
+          "GcDbMgd.dll": {
+            "assemblyVersion": "3.5.0.29263",
+            "fileVersion": "25.0.10.16"
+          }
+        }
+      },
+      "GcMgd/1.0.9055.29284": {
+        "runtime": {
+          "GcMgd.dll": {
+            "assemblyVersion": "1.0.9055.29284",
+            "fileVersion": "25.0.10.16"
+          }
+        }
+      },
+      "GrxCAD.Interop/24.0.12.16": {
+        "runtime": {
+          "GrxCAD.Interop.dll": {
+            "assemblyVersion": "24.0.12.16",
+            "fileVersion": "25.0.0.1216"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AICommands_IJCAD/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Speech/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u75jktAY5Ee6DA1pXBRkWBaMpUGn+iunXt+qhqhreWjBRIcVjaSLpgxpYqA49eFBRWIfscbMvcHPLJMLyzTr6A==",
+      "path": "system.speech/9.0.3",
+      "hashPath": "system.speech.9.0.3.nupkg.sha512"
+    },
+    "GcCoreMgd/1.0.9055.29274": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GcDbMgd/3.5.0.29263": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GcMgd/1.0.9055.29284": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GrxCAD.Interop/24.0.12.16": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "AI": "OpenAI",
+  "OpenAI": {
+    "Model": "gpt-4.1-mini-2025-04-14",
+    "Key": ""
+  },
+  "Gemini": {
+    "Model": "gemini-2.0-flash",
+    "Key": ""
+  },
+  "Ollama": {
+    "Model": "mistral-small3.1",
+    "Key": ""
+  }
+}

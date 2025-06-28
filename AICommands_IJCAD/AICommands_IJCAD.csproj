@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <BaseOutputPath>../Module\ACAD</BaseOutputPath>
+    <UseWindowsForms>True</UseWindowsForms>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <Configurations>Debug;Release;Debug_IJCAD;Release_IJCAD</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Speech" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GcCoreMgd">
+      <HintPath>..\..\..\..\..\Program Files\ITJP\IJCAD 2025 PRO Subscription\GcCoreMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="GcDbMgd">
+      <HintPath>..\..\..\..\..\Program Files\ITJP\IJCAD 2025 PRO Subscription\GcDbMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="GcMgd">
+      <HintPath>..\..\..\..\..\Program Files\ITJP\IJCAD 2025 PRO Subscription\GcMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="GrxCAD.Interop">
+      <HintPath>..\..\..\..\..\grxsdk 2025\inc-x64\GrxCAD.Interop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="FlattenRuntimes" AfterTargets="Build">
+    <ItemGroup>
+      <RuntimeAssemblies Include="$(OutputPath)runtimes\**\System.Speech.dll" />
+    </ItemGroup>
+    <Copy SourceFiles="@(RuntimeAssemblies)" DestinationFolder="$(OutputPath)" />
+  </Target>
+
+</Project>
